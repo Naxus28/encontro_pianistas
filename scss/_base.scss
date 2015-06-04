@@ -1,0 +1,49 @@
+.row{
+	margin-left:0; 
+	margin-right:0; 
+	max-width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+header{
+	background: linear-gradient(
+      rgba(237, 206, 178, 0.65), 
+      rgba(237, 206, 178, 0.65)
+    ), url(../images/piano_hands1.jpg);
+	background-size: cover;
+	min-height:100%;
+
+	h1{
+		@include cinzelRegular();
+		font-size: 3em;
+		text-align: center;
+		span{
+			letter-spacing: 1.8px;
+			display: block;
+		}
+	}
+	.logo-menu{
+		padding: 30px 5% 40px;
+	}
+	.logo{
+		width: 90%;
+	}
+	.menu{
+		padding-top: 35px;
+		text-align: right;
+	}
+	.announce{
+		p{
+			margin-top: 10px;
+			@include latoLight();
+			font-size: 1.52em;
+			text-align: center;
+			&:nth-child(3){
+				margin-top: 50px;
+				font-style: oblique;
+				font-size: 1.7em;
+			}
+		}
+	}
+}

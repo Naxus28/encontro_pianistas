@@ -1,0 +1,28 @@
+
+@mixin cinzelRegular(){
+	font-family: 'Cinzel', serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin cinzelBold(){
+	font-family: 'Cinzel', serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+@mixin latoRegular{
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+@mixin latoLight{
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+@mixin latoBold{
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
