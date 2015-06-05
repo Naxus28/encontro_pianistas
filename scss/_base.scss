@@ -49,7 +49,7 @@ header{
 		width: 70%;
 	}
 	.menu{
-		padding-top: 30px;
+		padding-top: 36px;
 		text-align: right;
 	}
 	.announce{
@@ -117,16 +117,18 @@ article.about{
 	background: $beige;
 	.jp_picture{
 		margin-top: 30px;
+		width: 100%;
 	}
 	.jp_picture_tag{
 		margin-top: 5px;
 		font-size: 14px;
 		display: block;
 		text-align: center;
+		font-style: oblique;
 	}
-	p, address, li{
+	p{
 		@include latoRegular();
-		font-size: 14px;
+		font-size: 0.8335em;
 	}
 	.address{
 		margin-bottom: 10px;
