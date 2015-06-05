@@ -1,49 +1,159 @@
+
+//OVERWRITE FOUNDATION STYLES
 .row{
-	margin-left:0; 
-	margin-right:0; 
-	max-width: 100%;
-	padding-left: 10%;
-	padding-right: 10%;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 90%;
 }
 
+
+//GLOBAL STYLES
+//**********************************************
+body{
+	@include font-smoothing();
+}
+h2{
+	@include cinzelRegular();
+	font-size: 2em;
+	border-bottom: 1px solid $black;
+}
+article{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+//HEADER
+//**********************************************
 header{
 	background: linear-gradient(
-      rgba(237, 206, 178, 0.65), 
-      rgba(237, 206, 178, 0.65)
-    ), url(../images/piano_hands1.jpg);
+      rgba(237,206,178, 0.7), 
+      rgba(237, 206, 178, 0.7)
+    ), url(../images/piano_hands1.jpg) no-repeat center center;
 	background-size: cover;
-	min-height:100%;
+	padding-bottom: 5px;
 
 	h1{
 		@include cinzelRegular();
-		font-size: 3em;
+		color: $black;
+		font-size: 4.2em;
 		text-align: center;
 		span{
-			letter-spacing: 1.8px;
+			letter-spacing: 2.5px;
 			display: block;
 		}
 	}
 	.logo-menu{
-		padding: 30px 5% 40px;
+		padding: 30px 0 110px;
 	}
 	.logo{
-		width: 90%;
+		width: 70%;
 	}
 	.menu{
-		padding-top: 35px;
+		padding-top: 30px;
 		text-align: right;
 	}
 	.announce{
 		p{
 			margin-top: 10px;
+			color: $black;
 			@include latoLight();
-			font-size: 1.52em;
+			font-size: 2em;
 			text-align: center;
 			&:nth-child(3){
-				margin-top: 50px;
+				margin-top: 60px;
 				font-style: oblique;
-				font-size: 1.7em;
+				font-size: 2em;
 			}
 		}
 	}
+	.callout{
+		margin-top: 150px;
+		margin-bottom: 20px;
+		padding: 20px;
+		background: $brown;
+		width: 80%;
+		p{
+			color: $white;
+			margin: 5px;
+			&.registration{
+				@include cinzelRegular();
+				font-size: 1.3em;
+				letter-spacing: 1px;
+			}
+		}
+		.descriptions_wrapper{
+			position: relative;
+			.callout_descriptions{
+				margin-top: 10px;
+				p{
+					@include latoLight();
+					letter-spacing: 0.4px;
+					&:first-child{	
+						font-style: oblique;
+						font-size: 1.4em;
+					}
+					&:nth-child(2){
+						font-size: 1.2em;
+					}
+				}
+			}
+			a.register{
+				margin-top: 30px;
+				background: $green;
+				font-size: 1em;
+				text-transform: uppercase;
+				padding:10px 20px;
+				color: $white;
+				display: inline-block;
+			}		
+		}
+	}
 }
+
+//ABOUT
+//**********************************************
+
+article.about{
+	background: $beige;
+	.jp_picture{
+		margin-top: 30px;
+	}
+	.jp_picture_tag{
+		margin-top: 5px;
+		font-size: 14px;
+		display: block;
+		text-align: center;
+	}
+	p, address, li{
+		@include latoRegular();
+		font-size: 14px;
+	}
+	.address{
+		margin-bottom: 10px;
+		display: inline-block;
+		padding-bottom: 2px;
+		border-bottom: 1px solid $black;
+	}
+	address{
+		font-style: oblique;
+		margin-bottom: 10px;
+		span{
+			display: block;
+		}
+	}
+	span.times{
+		display: block;
+		font-weight: bold;
+	}
+	span.break{
+		font-style: oblique;
+	}
+	p.bolsas{
+		font-size: 16px;
+		font-style: oblique;
+		text-decoration: underline;
+	}
+
+}
+
+

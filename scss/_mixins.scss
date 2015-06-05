@@ -5,6 +5,12 @@
 	font-weight: 400;
 }
 
+@mixin cinzelSemiBold(){
+	font-family: 'Cinzel', serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
 @mixin cinzelBold(){
 	font-family: 'Cinzel', serif;
 	font-style: normal;
@@ -16,13 +22,34 @@
 	font-style: normal;
 	font-weight: 400;
 }
+
+@mixin latoThin{
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: 100;
+}
+
 @mixin latoLight{
 	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 }
+
 @mixin latoBold{
 	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 700;
+}
+
+
+/*****ANTI ALIASING*****/
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
 }
