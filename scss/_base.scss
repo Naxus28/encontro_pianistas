@@ -52,12 +52,12 @@ article{
 			color: $black;
 		}
 	}
-
 	.pianists_pictures{
 		position: relative;
 		float: left;
 		width: 40%;
 		margin-right: 35px;
+		// margin-bottom: 2px;
 		span.pianists_captions{
 			@include latoRegular();
 			position: absolute;
@@ -90,6 +90,15 @@ article{
 		height: 300px;
 		margin-bottom: 20px;
 	}
+}
+hr{
+	// border: 1px solid $black;
+	margin:0;
+	border-width: 1px 0 0;
+	border-color: rgb(50, 50, 50);
+	// color: rgb(3, 3, 3);
+	height: 2px;
+	box-shadow: inset 0 12px 12px -12px rgba(3, 3, 3, 0.9);
 }
 
 //HEADER
@@ -138,8 +147,8 @@ header{
 			letter-spacing: 2.5px;
 			display: block;
 			&.professors_header{
-				margin-top: 10px;
-				font-size: 1.5em;
+				margin-top: 30px;
+				font-size: 1.3em;
 			}
 		}
 	}
