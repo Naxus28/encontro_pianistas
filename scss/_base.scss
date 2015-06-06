@@ -43,15 +43,74 @@ article{
 		font-size: 1.4em;
 	}
 }
+.pianists_pages{
+	background: $beige;
+	blockquote{
+		font-style: oblique;
+		span{
+			font-style: normal;
+			color: $black;
+		}
+	}
+
+	.pianists_pictures{
+		position: relative;
+		float: left;
+		width: 40%;
+		margin-right: 35px;
+		span.pianists_captions{
+			@include latoRegular();
+			position: absolute;
+			bottom: 0;
+			left:0;
+			right:0;
+			margin-left: auto;
+			margin-right: auto;
+			color: $white;
+			font-size: 16px;
+			background: rgba(0,0,0, 0.5);
+			padding: 10px;
+		}
+	}
+	.pianists_wrapper{
+		margin-top: 20px;
+		p{
+			line-height: 30px;
+		}
+		img{
+			width: 100%;
+		}
+	}
+	h3{
+		// text-decoration: underline;
+		margin-bottom: 20px;
+	}
+	iframe{
+		width: 100%;
+		height: 300px;
+		margin-bottom: 20px;
+	}
+}
 
 //HEADER
 //**********************************************
 header{
-	background: linear-gradient(
-      rgba(237,206,178, 0.7), 
-      rgba(237, 206, 178, 0.7)
-    ), url(../images/piano_hands1.jpg) no-repeat center center;
-	background-size: cover;
+	&.main{
+		background: linear-gradient(
+	      rgba(237,206,178, 0.7), 
+	      rgba(237, 206, 178, 0.7)
+	    ), url(../images/piano_hands1.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	&.pianists_profile{
+		background: linear-gradient(
+	      rgba(237,206,178, 0.7), 
+	      rgba(237, 206, 178, 0.7)
+	    ), url(../images/piano_hands1.jpg) no-repeat center center;
+		background-size: cover;
+		min-height: 30%;
+	}
+	
 	// background-attachment: fixed;
 	padding-bottom: 5px;
 	h1{
@@ -59,16 +118,39 @@ header{
 		color: $black;
 		font-size: 4.2em;
 		text-align: center;
+		&.pianists{
+			font-size: 2.4em;
+			margin-bottom: 50px;
+		}
+		@media screen and (max-width: 1146px){
+			font-size: 3.5em;
+		}
+		@media screen and (max-width: 976px){
+			font-size: 3em;
+		}
+		@media screen and (max-width: 848px){
+			font-size: 2.5em;
+		}
+		@media screen and (max-width: 724px){
+			font-size: 2em;
+		}
 		span{
 			letter-spacing: 2.5px;
 			display: block;
+			&.professors_header{
+				margin-top: 10px;
+				font-size: 1.5em;
+			}
 		}
 	}
 	.logo-menu{
 		padding: 30px 0 110px;
+		&.pianists_profile_menu{
+			padding: 30px 0 70px;
+		}
 	}
 	.logo{
-		width: 70%;
+		width: 140px;
 	}
 	.menu{
 		padding-top: 36px;
@@ -85,6 +167,34 @@ header{
 				margin-top: 60px;
 				font-style: oblique;
 				font-size: 2em;
+			}
+			@media screen and (max-width: 1146px){
+				font-size: 1.8em;
+				&:nth-child(3){
+					margin-top: 30px;
+					font-size: 1.8em;
+				}
+			}
+			@media screen and (max-width: 976px){
+				font-size: 1.5em;
+				&:nth-child(3){
+					margin-top: 30px;
+					font-size: 1.5em;
+				}
+			}
+			@media screen and (max-width: 848px){
+				font-size: 1.3em;
+				&:nth-child(3){
+					margin-top: 30px;
+					font-size: 1.3em;
+				}
+			}
+			@media screen and (max-width: 724px){
+				font-size: 1.1em;
+				&:nth-child(3){
+					margin-top: 30px;
+					font-size: 1.1em;
+				}
 			}
 		}
 	}
@@ -137,9 +247,6 @@ header{
 
 article.about{
 	background: #F9E4D4;
-	// .about_wrapper{
-	// 	margin-top: 40px;
-	// }
 	.jp_picture{
 		margin-right: 20px;
 		width: 20%;
@@ -160,11 +267,14 @@ article.about{
 			text-align: center;
 			font-style: oblique;
 		}
+		@media screen and (max-width: 1000px){
+			display: none;
+		}
 	}
 	p{
 		@include latoRegular();
 		font-size: 1em;
-		line-height: 24px;
+		line-height: 30px;
 	}
 	p.bolsas{
 		font-size: 16px;
@@ -303,6 +413,11 @@ article.professores{
     ), url(../images/piano2.jpg) no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
+}
+
+// form
+article.form{
+	background: #F9E4D4;
 }
 
 
