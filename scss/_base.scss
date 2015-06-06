@@ -6,7 +6,6 @@
 	max-width: 90%;
 }
 
-
 //GLOBAL STYLES
 //**********************************************
 body{
@@ -19,16 +18,19 @@ h2{
 }
 h3{
 	@include latoLight();
-	font-size: 1.5em;
+	font-size: 1.7em;
 	color: $darkBlack;
 }
 article{
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.wrapper{
+	margin-top: 40px;
 }
 .background_images{
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	h3{
 		text-align: center;
 	}
@@ -38,7 +40,7 @@ article{
 		@include latoLight();
 		font-style: oblique;
 		text-align: center;
-		font-size: 1.2em;
+		font-size: 1.4em;
 	}
 }
 
@@ -118,7 +120,7 @@ header{
 				}
 			}
 			a.register{
-				margin-top: 30px;
+				margin-top: 36px;
 				background: $green;
 				font-size: 1em;
 				text-transform: uppercase;
@@ -135,9 +137,9 @@ header{
 
 article.about{
 	background: #F9E4D4;
-	.about_wrapper{
-		margin-top: 30px;
-	}
+	// .about_wrapper{
+	// 	margin-top: 40px;
+	// }
 	.jp_picture{
 		margin-right: 20px;
 		width: 20%;
@@ -161,7 +163,7 @@ article.about{
 	}
 	p{
 		@include latoRegular();
-		font-size: 0.9em;
+		font-size: 1em;
 		line-height: 24px;
 	}
 	p.bolsas{
@@ -172,24 +174,135 @@ article.about{
 
 }
 
-// background image
+// background image 1
 .background_image1{
 	background: linear-gradient(
-      rgba(237,206,178, 0.8), 
-      rgba(237, 206, 178, 0.8)
+      rgba(237,206,178, 0.7), 
+      rgba(237, 206, 178, 0.7)
     ), url(../images/jp_piano.jpg) no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 }
 
+// article professores
 article.professores{
 	background: $darkBrown;
 	.professores_wrapper{
-		margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;	
+	padding-left: 15px;
+	padding-right: 15px;
+		@media screen and (min-width: 1024px){
+			&.second_row{
+				margin-top: 25px;
+			}
+		}	
+		div{
+			position: relative;
+			p{
+				@include latoBold();
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				font-size: 15px;
+				padding: 5px 10px;
+				padding-bottom: 7px;
+				color: $white;
+				position: absolute; 
+				background: rgba(0,0,0, 0.6);
+				text-align: center;
+				line-height: 18px;
+				span{
+					@include latoRegular();
+					font-style: oblique;
+					font-size: 12px;
+					letter-spacing: 0.3px;
+				}
+			}
+			@media screen and (min-width: 1024px){
+				width: 23.5%;
+				padding: 0;
+				margin-right: 2%;
+				overflow: hidden;
+				&:last-child{
+					margin-right: 0;
+				}
+				&:hover img{
+					-webkit-transform:scale(1.15); /* Safari and Chrome */
+				    -moz-transform:scale(1.15); /* Firefox */
+				    -ms-transform:scale(1.15); /* IE 9 */
+				    -o-transform:scale(1.15); /* Opera */
+				     transform:scale(1.15);
+				}
+			}
+			@media screen and (max-width: 1023px){
+				margin-bottom: 40px;
+				padding: 0;
+				width: 49%;
+				&:nth-child(odd){
+					margin-right: 2%;
+				}
+				p{
+					@include latoBold();
+					margin-left: auto;
+					margin-right: auto;
+					margin-bottom: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					font-size: 15px;
+					padding: 5px 10px;
+					padding-bottom: 7px;
+					color: $white;
+					position: absolute; 
+					background: rgba(0,0,0, 0.6);
+					text-align: center;
+					line-height: 24px;
+					span{
+						@include latoRegular();
+						font-style: oblique;
+						font-size: 16px;
+						letter-spacing: 0.5px;
+					}
+				}
+			}
+			@media screen and (max-width: 977px){
+				margin-bottom: 40px;
+				padding: 0;
+				width: 48%;
+				&:nth-child(odd){
+					margin-right: 3.7%;
+				}
+			}
+			@media screen and (max-width: 800px){
+				margin-bottom: 40px;
+				padding: 0;
+				width: 100%;
+			}
+		}
 		img{
 			width: 100%;
+			-webkit-transition: all 1s ease; /* Safari and Chrome */
+		    -moz-transition: all 1s ease; /* Firefox */
+		    -ms-transition: all 1s ease; /* IE 9 */
+		    -o-transition: all 1s ease; /* Opera */
+		    transition: all 1s ease;
+			cursor: pointer;
 		}
 	}
+}
+
+// background image 2
+.background_image2{
+	background: linear-gradient(
+      rgba(237,206,178, 0.7), 
+      rgba(237, 206, 178, 0.7)
+    ), url(../images/piano2.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 
