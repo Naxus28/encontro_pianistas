@@ -17,9 +17,29 @@ h2{
 	font-size: 2em;
 	border-bottom: 1px solid $black;
 }
+h3{
+	@include latoLight();
+	font-size: 1.5em;
+	color: $darkBlack;
+}
 article{
 	padding-top: 40px;
 	padding-bottom: 40px;
+}
+.background_images{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	h3{
+		text-align: center;
+	}
+	span.quotes{
+		margin-top: 20px;
+		display: block;
+		@include latoLight();
+		font-style: oblique;
+		text-align: center;
+		font-size: 1.2em;
+	}
 }
 
 //HEADER
@@ -30,8 +50,8 @@ header{
       rgba(237, 206, 178, 0.7)
     ), url(../images/piano_hands1.jpg) no-repeat center center;
 	background-size: cover;
+	// background-attachment: fixed;
 	padding-bottom: 5px;
-
 	h1{
 		@include cinzelRegular();
 		color: $black;
@@ -114,41 +134,35 @@ header{
 //**********************************************
 
 article.about{
-	background: $beige;
-	.jp_picture{
+	background: #F9E4D4;
+	.about_wrapper{
 		margin-top: 30px;
-		width: 100%;
 	}
-	.jp_picture_tag{
-		margin-top: 5px;
-		font-size: 14px;
-		display: block;
-		text-align: center;
-		font-style: oblique;
+	.jp_picture{
+		margin-right: 20px;
+		width: 20%;
+		float: left;
+		position: relative;
+		img{
+			 width: 100%; 
+		}
+		.jp_picture_tag{
+			margin-top: 5px;
+			font-size: 14px;
+			position: absolute; 
+			padding-top: 3px;
+			padding-bottom: 3px;
+			color: $white;
+			bottom: 0;
+			background: rgba(0,0,0, 0.5);
+			text-align: center;
+			font-style: oblique;
+		}
 	}
 	p{
 		@include latoRegular();
-		font-size: 0.8335em;
-	}
-	.address{
-		margin-bottom: 10px;
-		display: inline-block;
-		padding-bottom: 2px;
-		border-bottom: 1px solid $black;
-	}
-	address{
-		font-style: oblique;
-		margin-bottom: 10px;
-		span{
-			display: block;
-		}
-	}
-	span.times{
-		display: block;
-		font-weight: bold;
-	}
-	span.break{
-		font-style: oblique;
+		font-size: 0.9em;
+		line-height: 24px;
 	}
 	p.bolsas{
 		font-size: 16px;
@@ -156,6 +170,26 @@ article.about{
 		text-decoration: underline;
 	}
 
+}
+
+// background image
+.background_image1{
+	background: linear-gradient(
+      rgba(237,206,178, 0.8), 
+      rgba(237, 206, 178, 0.8)
+    ), url(../images/jp_piano.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+article.professores{
+	background: $darkBrown;
+	.professores_wrapper{
+		margin-top: 30px;
+		img{
+			width: 100%;
+		}
+	}
 }
 
 
