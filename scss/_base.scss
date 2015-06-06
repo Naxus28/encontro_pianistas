@@ -23,14 +23,14 @@ h3{
 }
 article{
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 60px;
 }
 .wrapper{
 	margin-top: 40px;
 }
 .background_images{
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 70px;
+	padding-bottom: 70px;
 	h3{
 		text-align: center;
 	}
@@ -104,12 +104,18 @@ hr{
 //HEADER
 //**********************************************
 header{
+	position: relative;
+	overflow:hidden;
+	.open_menu, .close_menu{
+		cursor: pointer;
+	}
 	&.main{
 		background: linear-gradient(
 	      rgba(237,206,178, 0.7), 
 	      rgba(237, 206, 178, 0.7)
 	    ), url(../images/piano_hands1.jpg) no-repeat center center;
 		background-size: cover;
+		 min-height: 100%;
 	}
 	&.pianists_profile{
 		background: linear-gradient(
@@ -118,6 +124,49 @@ header{
 	    ), url(../images/piano_hands1.jpg) no-repeat center center;
 		background-size: cover;
 		min-height: 30%;
+	}
+	aside.menu {
+		position : absolute;
+		top : 0;
+		right : 0;
+		width : 270px;
+		height : 100%;
+		margin-right : 0;
+		background : $darkBrown;
+		// translate: 100%, 0;
+		-ms-transition: all 0.5s ease-in-out;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+
+		-ms-transform: translate(100%, 0); /* IE 9 */
+		-webkit-transform: translate(100%, 0); /* Safari */
+		-moz-transform: translate(100%, 0); /* Safari */
+		transform: translate(100%, 0);
+		nav{
+			li {
+				i{
+					color: $white;	
+				}
+				padding: 20px;
+				list-style-type: none;
+				text-align: left;
+				a{
+					color: $white;
+					@include latoBold();
+					font-size: 1.1em;
+					transition: all 0.2s ease;
+					&:hover{
+						color: rgba(250,250,250, 0.5);
+					}
+
+				}
+				&:first-child{
+					margin-right: 20px;
+					text-align: right;
+				}
+			}
+		}
 	}
 	
 	// background-attachment: fixed;
@@ -129,7 +178,8 @@ header{
 		text-align: center;
 		&.pianists{
 			font-size: 2.4em;
-			margin-bottom: 50px;
+			margin-bottom: 110px;
+			margin-top: 30px;
 		}
 		@media screen and (max-width: 1146px){
 			font-size: 3.5em;
@@ -293,7 +343,7 @@ article.about{
 
 }
 
-// background image 1
+//*************background image 1*************
 .background_image1{
 	background: linear-gradient(
       rgba(237,206,178, 0.7), 
@@ -303,9 +353,10 @@ article.about{
 	background-attachment: fixed;
 }
 
-// article professores
+
+//*************article professores*************
 article.professores{
-	background: $darkBrown;
+	background: $brown;
 	.professores_wrapper{
 	margin-left: auto;
 	margin-right: auto;	
@@ -414,7 +465,7 @@ article.professores{
 	}
 }
 
-// background image 2
+//*************background image 2*************
 .background_image2{
 	background: linear-gradient(
       rgba(237,206,178, 0.7), 
@@ -424,9 +475,69 @@ article.professores{
 	background-attachment: fixed;
 }
 
-// form
+//*************form*************
 article.form{
 	background: #F9E4D4;
 }
+
+//*************professores*************
+.show_videos{
+	display: none;
+}
+.open_videos{
+	transition: all 1s ease-in-out;
+	cursor: pointer;
+	font-size: 2em;
+	&:hover{
+		// @include latoRegular();
+		text-decoration: underline;
+	}
+}
+
+
+//*************professores*************
+footer{
+	.columns{
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 25px;
+	}
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: $footer_color;
+	iframe{
+		margin-top: 20px;
+		width: 100%;
+	}
+	img{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	a{
+		@include latoLight;
+		color: $black;
+		font-size: 1.2em;
+		// transition: all 0.2 ease-in-out;
+		&:hover{
+			text-decoration: underline;
+			color: $black;
+		}
+		&:visited{
+			color: $black;
+		}
+	}
+	ul{
+		margin-left: 0;
+		li{
+			list-style-type: none;
+			margin-bottom: 10px
+		}
+	}
+}
+
+
+
+
+
 
 
