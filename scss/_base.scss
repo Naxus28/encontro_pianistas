@@ -196,7 +196,7 @@ header{
 		span{
 			letter-spacing: 2.5px;
 			display: block;
-			&.professors_header{
+			&.header{
 				margin-top: 30px;
 				font-size: 1.3em;
 			}
@@ -296,6 +296,12 @@ header{
 				padding:10px 20px;
 				color: $white;
 				display: inline-block;
+				transition: all 0.2s ease-in-out;
+				&:hover{
+					text-decoration: none;
+					background: $darkGreen;
+					color: #f1f1f1;
+				}
 			}		
 		}
 	}
@@ -496,7 +502,7 @@ article.form{
 }
 
 
-//*************professores*************
+//*************footer*************
 footer{
 	.columns{
 		padding-left: 15px;
@@ -504,7 +510,7 @@ footer{
 		margin-bottom: 25px;
 	}
 	padding-top: 40px;
-	padding-bottom: 40px;
+	// padding-bottom: 40px;
 	background: $footer_color;
 	iframe{
 		margin-top: 20px;
@@ -534,7 +540,62 @@ footer{
 			margin-bottom: 10px
 		}
 	}
+	.row.copy{
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	p{
+		text-align: center;
+		padding: 15px;
+		margin-bottom: 0;
+		@include latoLight();
+		font-size: 1.2em;
+		color: $black;
+		font-style: oblique;
+		background: #665958;
+		a{
+			font-style: oblique;
+			font-size: 1em;
+		}
+	}
 }
+
+//*************inscrições*************
+p{
+	@include latoRegular();
+	&.where, &.hours, &.address_housing, &.scholarships{
+		margin-bottom: 10px;
+	}
+	.info_data{
+		text-transform: uppercase;
+		@include latoBold();
+
+	}
+	.school_underline{
+		text-decoration: underline;
+	}
+}
+.map_info{
+	width: 100%;
+}
+a{
+	@include latoRegular;
+	color: $black;
+	&:hover{
+		text-decoration: underline;
+		color: $black;
+	}
+	&:visited{
+		color: $black;
+	}
+}
+ul{
+	li{
+		margin-bottom: 8px;
+		margin-left: 20px;
+	}
+}
+
 
 
 
