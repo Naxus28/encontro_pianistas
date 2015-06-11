@@ -626,6 +626,54 @@ ul{
 	}	
 }
 
+.registration_form{
+	i{
+		color: $darkGreen;
+		cursor: pointer;
+	}
+}
+
+//*************contato*************
+article.article{
+	background: $beige;
+	h2{
+		margin-bottom: 28px;
+	}
+	.button.small{
+		width: 200px;
+		background: $green;
+		text-transform: uppercase;
+		color: $white;
+		font-size: 1.2em;
+		transition: all 0.2 ease-in-out;
+		&:hover{
+			background: $darkGreen;
+			color: white;
+		}
+	}
+	textarea{
+		height: 250px;
+		max-height: 300px;
+		width: 100%;
+		max-width: 100%;
+	}
+	.alert_messages{
+		padding-left: 15px;
+		padding-right: 15px;
+		.alert{
+			font-size: 1em;
+			display: none;
+		}
+		.fail{
+			background: #EC5D45;
+			border: 1px solid #D23014;
+		}
+		.success{
+			background: #6DB286;
+			border: 1px solid #3a945b;
+		}
+	}
+}
 
 
 

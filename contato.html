@@ -19,25 +19,22 @@
   <body>
 
     <!-- Header -->
-    <header class="main">
-      <div class="row logo-menu">
+    <header class="pianists_profile" data-stellar-background-ratio="0.7">
+      <div class="row logo-menu pianists_profile_menu">
         <div class="small-5 medium-3 large-2 columns">
-          <a href="index.html">
+         <a href="index.html">
             <img src="images/logo/logo_final.svg" alt="logo" class="logo">
           </a>
         </div>
         <div class="small-1 medium-6 large-7 columns">
         </div>
-        <div class="small-6 medium-3 large-2 columns menu">
-          <i class="fa fa-bars fa-3x open_menu"></i>
+        <div class="small-6 medium-3 large-2 columns open_menu menu">
+          <i class="fa fa-bars fa-3x"></i>
         </div>
       </div>
       <div class="row">
         <div class="large-12 columns announce">
-          <h1>Página em Construção. Agradecemos sua paciência.</h1>
-          <p>Você pode entrar em contato pelo seguinte e-mail: 
-            <a href="mailto:eipianopira@gmail.com?Subject=Contato%20sobre%20o%20encontro">eipianopira@gmail.com</a>
-          </p>
+          <h1 class="pianists">II Encontro Internacional de Pianistas de Piracicaba<span class="header">Contato</span></h1>
         </div>
       </div>
       <div class="row">
@@ -58,6 +55,60 @@
         </aside>
       </div>
     </header>
+
+    <!-- CONTACT
+    ==================================== -->
+    <article id="contact" class="article">
+      <section class="contact container">
+        <div class="row">
+          <div class="large-12 columns contact_text">
+            <h2>Contato</h2>
+            <p>Se você tem qualquer pergunta sobre o festival, por favor preencha e envie o formulário abaixo. Nós entraremos em contato o mais breve possível.</p>
+          </div>
+        </div>
+        
+        <div class="row alert_messages">
+          <div data-alert class="alert-box alert radius fail"><span class="fill_out_form">Por favor, preencha os campos obrigatórios, </span>.<a href="#" class="close">&times;</a>
+          </div>
+        </div>
+          
+        <div class="row alert_messages">
+          <div data-alert class="alert-box alert radius email_success success"> <span class="add_name_after">Obrigado, </span>! Sua mensagem foi enviada. Entraremos em contato em breve.<a href="#" class="close">&times;</a>
+          </div>
+        </div>
+          
+        <form action="php_scripts/email.php" method="post" class="ajax">
+          <div class="row ">
+            <div class="large-6 small-12 columns name form_fields form_field_pr">
+              <input type="text" name="name" placeholder="Nome *"  required />
+            </div>
+            <div class="large-6 small-12 columns email form_fields form_field_pl">
+              <input type="text" name="email" placeholder="Email *" required />
+            </div>
+          </div>
+          <div class="row ">
+            <div class="large-6 small-12 columns subject form_fields form_field_pr">
+              <input type="text" name="subject" placeholder="Assunto *" required />
+            </div>
+            <div class="large-6 small-12 columns phone form_fields form_field_pl">
+              <input type="text" name="phone" placeholder="Telefone" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns message form_fields">
+              <textarea placeholder="Mensagem *" name="message" required /></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns submit">
+              <p>
+                <input class="small button send" name="submit" type="submit" value="Enviar">
+              </p>
+            </div>
+          </div>
+        </form>
+      </section>
+    </article>
     <!-- footer -->
     <footer>
       <div class="row">
