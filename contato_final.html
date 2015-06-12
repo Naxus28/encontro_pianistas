@@ -1,0 +1,159 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | II Encontro Internacional de Pianistas de Piracicaba</title>
+    <link rel="stylesheet" href="css/app.css" />
+
+    <!-- bower -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic|Cinzel:400,700' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header class="pianists_profile" data-stellar-background-ratio="0.7">
+      <div class="row logo-menu pianists_profile_menu">
+        <div class="small-5 medium-3 large-2 columns">
+         <a href="index.html">
+            <img src="images/logo/logo_final.svg" alt="logo" class="logo">
+          </a>
+        </div>
+        <div class="small-1 medium-6 large-7 columns">
+        </div>
+        <div class="small-6 medium-3 large-2 columns open_menu menu">
+          <i class="fa fa-bars fa-3x"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns announce">
+          <h1 class="pianists">II Encontro Internacional de Pianistas de Piracicaba<span class="header">Contato</span></h1>
+        </div>
+      </div>
+      <div class="row">
+        <aside class="menu">
+          <nav>
+            <section>
+              <ul>
+                <li class="close_menu"><i class="fa fa-times fa-lg"></i></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="professores.html" target="_blank">Professores</a></li>
+                <li><a href="programacao.html" target="_blank">Programação</a></li>
+                <li><a href="informacoes.html" target="_blank">Informações</a></li>
+                <li><a href="inscricoes.html" target="_blank">Inscrições</a></li>
+                <li><a href="contato.html" target="_blank">Contato</a></li>
+              </ul>
+            </section>
+          </nav>
+        </aside>
+      </div>
+    </header>
+
+    <!-- CONTACT
+    ==================================== -->
+    <article id="contact" class="article">
+      <section class="contact container">
+        <div class="row">
+          <div class="large-12 columns contact_text">
+            <h2>Contato</h2>
+            <p>Se você tem qualquer pergunta sobre o festival, por favor preencha e envie o formulário abaixo. Nós entraremos em contato o mais breve possível.</p>
+          </div>
+        </div>
+        
+        <div class="row alert_messages">
+          <div data-alert class="alert-box alert radius fail"><span class="fill_out_form">Por favor, preencha os campos obrigatórios, </span>.<a href="#" class="close">&times;</a>
+          </div>
+        </div>
+          
+        <div class="row alert_messages">
+          <div data-alert class="alert-box alert radius email_success success"> <span class="add_name_after">Obrigado, </span>! Sua mensagem foi enviada. Entraremos em contato em breve.<a href="#" class="close">&times;</a>
+          </div>
+        </div>
+          
+        <form action="php_scripts/email.php" method="post" class="ajax">
+          <div class="row ">
+            <div class="large-6 small-12 columns name form_fields form_field_pr">
+              <input type="text" name="name" placeholder="Nome *"  required />
+            </div>
+            <div class="large-6 small-12 columns email form_fields form_field_pl">
+              <input type="text" name="email" placeholder="Email *" required />
+            </div>
+          </div>
+          <div class="row ">
+            <div class="large-6 small-12 columns subject form_fields form_field_pr">
+              <input type="text" name="subject" placeholder="Assunto *" required />
+            </div>
+            <div class="large-6 small-12 columns phone form_fields form_field_pl">
+              <input type="text" name="phone" placeholder="Telefone" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns message form_fields">
+              <textarea placeholder="Mensagem *" name="message" required /></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns submit">
+              <p>
+                <input class="small button send" name="submit" type="submit" value="Enviar">
+              </p>
+            </div>
+          </div>
+        </form>
+      </section>
+    </article>
+    <!-- footer -->
+    <footer>
+      <div class="row">
+        <div class="small-12 large-3 columns">
+          <h3>Contato</h3>
+          <div>
+            Escola de Música de Piracicaba "Maestro Ernst Mahle"<br>
+            Rua Santa Cruz, 1155 <br>
+            Centro Piracicaba-SP <br>
+            Fones: (19) 3422 2464 e 3422 6270 
+            E-mail: <a href="mailto:eipianopira@gmail.com?Subject=Contato%20sobre%20o%20encontro">eipianopira@gmail.com</a>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14719.938482725025!2d-47.645361!3d-22.728813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x21f3ebafed967ad4!2sEscola+de+Musica+de+Piracicaba+Maestro+Ernst+Mahle!5e0!3m2!1sen!2sus!4v1433629752461" frameborder="0" style="border:0"></iframe>
+        </div>
+        <div class="small-12 large-3 columns">
+          <h3>Apoio</h3>
+          <img src="images/apoio/unimep.jpg" alt="unimep">
+          <img src="images/apoio/empem.jpg" alt="logo escola de música de piracicaba">
+        </div>
+        <div class="small-12 large-3 columns">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="professores.html" target="_blank">Professores</a></li>
+            <li><a href="programacao.html" target="_blank">Programação</a></li>
+            <li><a href="informacoes.html" target="_blank">Informações</a></li>
+            <li><a href="inscricoes.html" target="_blank">Inscrições</a></li>
+            <li><a href="contato.html"target="_blank">Contato</a></li>
+          </ul>
+        </div>
+        <div class="small-12 large-3 columns">
+          <h3>Festivais e Concursos de Piano</h3>
+          <ul>
+            <li><a href="http://portlandpiano.org/2015-general-info/">Portland Piano International Summer</a></li>
+            <li><a href="http://www.music.txstate.edu/piano/txipf/Home.html">1st Texas State International Piano Competition</a></li>
+            <li><a href="https://www.seattlepianocompetition.org/">Seattle International Piano Festival and Competition</a></li>
+            <li><a href="http://www.ferrarapiano.org/">Ferrara Piano Festival</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row copy">
+        <p> II Encontro Internacional de Pianistas de Piracicaba@2015. Todos os direitos reservados. Site desenvolvido por <a href="http://gabrielferraz.com" target="_blank">Gabriel Ferraz</a></p>
+      </div>
+    </footer>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
