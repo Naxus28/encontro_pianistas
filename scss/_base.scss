@@ -101,6 +101,12 @@ hr{
 	box-shadow: inset 0 12px 12px -12px rgba(3, 3, 3, 0.9);
 }
 
+.address{
+	@include latoLight();
+	font-size: 1.1em;
+	color: #020202;
+}
+
 //HEADER
 //**********************************************
 header{
@@ -673,6 +679,35 @@ article.article{
 			border: 1px solid #3a945b;
 		}
 	}
+}
+
+//*************programação*************
+
+.events{
+	>p{
+		font-size: 1.2em;
+	}
+	h3{
+		margin-top: 30px;
+		margin-bottom: 15px;
+	}
+	li{
+		// list-style-type: circle;
+		margin-left: 3px;
+		font-size: 1.03em;
+		margin-bottom: 15px;
+	}
+}
+
+
+//*************background image 3*************
+.background_image3{
+	background: linear-gradient(
+      rgba(237,206,178, 0.8), 
+      rgba(237, 206, 178, 0.8)
+    ), url(../images/piano_11.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 
