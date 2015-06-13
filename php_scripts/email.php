@@ -103,9 +103,9 @@
 	";
 
 	//prepare message
-	$to = 'gabrielferraz27@gmail.com';
+	$to = 'eipianopira@gmail.com';
 	$headers = 'From:  eipiano.com.br' . "\r\n" .
-	'Reply-To:  gabrielferraz27@gmail.com' . "\r\n" .
+	'Reply-To:  eipianopira@gmail.com' . "\r\n" .
 	'X-Mailer: PHP/' . phpversion();
 
 	//send email

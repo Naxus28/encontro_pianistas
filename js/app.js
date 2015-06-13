@@ -40,7 +40,7 @@ $(function(){
 
 	                //empty input fields, except the send button
 	                $('form.ajax').find('[name]').each(function(){
-	                    if($(this).val() != 'Send'){
+	                    if($(this).val() != 'Enviar'){
 	                        $(this).val('');
 	                    }
 	                });
