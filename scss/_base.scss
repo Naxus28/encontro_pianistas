@@ -651,6 +651,22 @@ ul{
 		cursor: pointer;
 	}
 }
+.note_registration{
+	text-decoration: underline;
+}
+.hotels{
+	color: #638985;
+	text-transform: uppercase;
+	font-weight: bold;
+	transition: all 0.2s ease;
+	&:hover{
+		color: #568279;
+	}
+	&:visited{
+		color: #638985;
+	}
+
+}
 
 //*************contato*************
 article.article{
