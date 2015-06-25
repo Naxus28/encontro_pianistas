@@ -508,6 +508,15 @@ article.form{
 	}
 }
 
+//*************background image 3*************
+.background_image3{
+	background: linear-gradient(
+      rgba(237,206,178, 0.8), 
+      rgba(237, 206, 178, 0.8)
+    ), url(../images/piano_11.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
 
 //*************footer*************
 footer{
@@ -712,6 +721,32 @@ article.article{
 
 //*************programação*************
 
+.event_day h3{
+	text-align: center;
+	margin-bottom: 30px !important;
+	@include latoSemiBold();
+}
+.title_emphasis{
+	@include latoSemiBold();
+}
+.event_title, .times{
+	float:left;
+	@include latoLight();
+	font-size: 1.3em;
+}
+.event_title{
+	width: 80%;
+}
+.events_wrapper p{
+	float: left;
+	width: 100%;
+}
+.times{
+	display: inline-block;
+	margin-right: 25px;
+	width: 150px;
+}
+
 .events{
 	>p{
 		font-size: 1.2em;
@@ -729,15 +764,8 @@ article.article{
 }
 
 
-//*************background image 3*************
-.background_image3{
-	background: linear-gradient(
-      rgba(237,206,178, 0.8), 
-      rgba(237, 206, 178, 0.8)
-    ), url(../images/piano_11.jpg) no-repeat center center;
-	background-size: cover;
-	background-attachment: fixed;
-}
+
+
 
 
 
