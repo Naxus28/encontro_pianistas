@@ -572,8 +572,6 @@ article.events_pages{
 	}
 }
 
-
-
 //*************professores page*************
 .show_videos{
 	display: none;
@@ -813,6 +811,7 @@ article.article{
 
 .event_day h3{
 	text-align: center;
+	margin-top: 45px;
 	margin-bottom: 30px !important;
 	@include latoSemiBold();
 }
