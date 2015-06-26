@@ -737,9 +737,12 @@ article.article{
 .event_title{
 	width: 80%;
 }
-.events_wrapper p{
+.events_wrapper {
 	float: left;
-	width: 100%;
+	p{
+		float: left;
+		width: 100%;
+	}
 }
 .times{
 	display: inline-block;
