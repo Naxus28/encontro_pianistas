@@ -69,7 +69,6 @@ article{
 		float: left;
 		width: 40%;
 		margin-right: 35px;
-		// margin-bottom: 2px;
 		span.pianists_captions{
 			@include latoRegular();
 			position: absolute;
@@ -82,6 +81,10 @@ article{
 			font-size: 16px;
 			background: rgba(0,0,0, 0.5);
 			padding: 10px;
+		}
+		@media screen and (max-width: 600px){
+			width: 100%;
+			margin-bottom: 15px;
 		}
 	}
 	.pianists_wrapper{
