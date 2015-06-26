@@ -11,6 +11,11 @@
 body{
 	@include font-smoothing();
 }
+h1{
+	@media screen and (max-width: 480px){
+		font-size: 1.7em !important;
+	}
+}
 h2{
 	@include cinzelRegular();
 	font-size: 2em;
@@ -21,6 +26,13 @@ h3{
 	font-size: 1.7em;
 	color: $darkBlack;
 }
+header h1 span.header{
+	@media screen and (max-width: 600px){
+		font-size: 1.2em !important;
+	}
+}
+
+
 article{
 	padding-top: 50px;
 	padding-bottom: 60px;
